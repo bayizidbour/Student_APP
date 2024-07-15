@@ -38,8 +38,7 @@ public class Message {
     @JoinColumn(name = "idUser")
     private Users user;
 
-    @OneToMany(mappedBy = "message", cascade = CascadeType.ALL)
-    private List<Like> likeList;
+
 
     @OneToMany(mappedBy = "message", cascade = CascadeType.ALL)
     private List<Repondre> repondreList;

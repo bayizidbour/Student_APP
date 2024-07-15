@@ -61,8 +61,7 @@ public class Users {
         @OneToOne(mappedBy = "user", cascade = CascadeType.ALL)
         private Profil profil;
 
-        @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
-        private List<Like> likeList;
+
 
         @OneToMany(mappedBy = "user", cascade = CascadeType.ALL)
         private List<Message> messageList;

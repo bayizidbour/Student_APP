@@ -37,6 +37,5 @@ public class Comment {
     private Users user ;
 
 
-    @OneToMany(mappedBy = "comment", cascade = CascadeType.ALL)
-    private List<Like> likeList;
+
 }

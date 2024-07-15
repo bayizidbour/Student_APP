@@ -40,6 +40,5 @@ public class Announce {
     @OneToMany (mappedBy = "announce", cascade = CascadeType.ALL)
     private List<Comment> commentList;
 
-    @OneToMany (mappedBy = "announce", cascade = CascadeType.ALL)
-    private List<Like> likeList;
+
 }
