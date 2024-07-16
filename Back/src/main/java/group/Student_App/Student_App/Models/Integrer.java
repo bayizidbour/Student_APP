@@ -25,6 +25,6 @@ public class Integrer {
     private Users user ;
 
     @ManyToOne
-    @JoinColumn(name = "idGroups")
-    private Groups groups;
+    @JoinColumn(name = "idGroupes")
+    private Groupes groupes;
 }

@@ -16,19 +16,19 @@ import java.util.List;
 @NoArgsConstructor
 @Getter
 @Setter
-public class Groups {
+public class Groupes {
 
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private  Long idGroups;
+    private  Long idGroupes;
 
     @NotNull
     @Column(length = 50)
     @Size(min = 2, message = "Le nom de groupe doit comporter au moins deux caractères")
     private  String groupName;
 
-    @OneToMany(mappedBy = "groups", cascade = CascadeType.ALL)
+    @OneToMany(mappedBy = "groupes", cascade = CascadeType.ALL)
     private List<Integrer> integrerList;
 
 }
